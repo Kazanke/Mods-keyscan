@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"keyscan_example\startup_stm32f103xb.o"
+"keyscan_example\main.o"
+"keyscan_example\stm32f1xx_it.o"
+"keyscan_example\stm32f1xx_hal_msp.o"
+"keyscan_example\stm32f1xx_hal_gpio_ex.o"
+"keyscan_example\stm32f1xx_hal_uart.o"
+"keyscan_example\stm32f1xx_hal.o"
+"keyscan_example\stm32f1xx_hal_rcc.o"
+"keyscan_example\stm32f1xx_hal_rcc_ex.o"
+"keyscan_example\stm32f1xx_hal_gpio.o"
+"keyscan_example\stm32f1xx_hal_dma.o"
+"keyscan_example\stm32f1xx_hal_cortex.o"
+"keyscan_example\stm32f1xx_hal_pwr.o"
+"keyscan_example\stm32f1xx_hal_flash.o"
+"keyscan_example\stm32f1xx_hal_flash_ex.o"
+"keyscan_example\stm32f1xx_hal_exti.o"
+"keyscan_example\system_stm32f1xx.o"
+"keyscan_example\example_key_scan.o"
+"keyscan_example\key_scan.o"
+--library_type=microlib --strict --scatter "keyscan_example\keyscan_example.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "keyscan_example.map" -o keyscan_example\keyscan_example.axf
